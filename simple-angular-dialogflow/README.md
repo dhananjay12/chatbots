@@ -9,4 +9,4 @@ Copy the access token and Past the token into your environments/environment.ts f
 
 NOTE: Your token ideally should not be in Angular. A hacker could intercept this key and make requests to your endpoint. So dont commit your token ever. Usally a routing server appends the token in your backend.
 
-
+![alt text](https://github.com/dhananjay12/chatbots/blob/master/simple-angular-dialogflow/demo.PNG)
