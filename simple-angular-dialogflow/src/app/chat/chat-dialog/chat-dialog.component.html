@@ -1,0 +1,22 @@
+<div class="chatlist">
+  <ul class="list-group">
+    <div *ngFor="let message of messages | async">
+      <div class="message" [ngClass]="{ 'from': message.sentBy === 'bot',
+            'to':   message.sentBy === 'user' }">
+        <li class="list-group-item">
+          <img [src]="message.avatar" class="avatar" />
+          <div class="message">
+            {{message.content}}
+          </div>
+        </li>
+      </div>
+    </div>
+  </ul>
+</div>
+
+
+
+<div class="chatcontrol">
+  <input type="text" class="form-control chatinput" (keyup.enter)="sendMessage()" [(ngModel)]="formValue" />
+  <button class="btn btn-success sendbtn" (click)="sendMessage()">Send</button>
+</div>
