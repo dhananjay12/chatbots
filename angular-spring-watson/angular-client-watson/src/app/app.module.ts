@@ -1,22 +1,14 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { AppComponent } from './app.component';
-import { HttpModule } from '@angular/http';
-import { ChatDialogComponent } from './chat/chat-dialog/chat-dialog.component';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
+import { FormsModule } from "@angular/forms";
+import { AppComponent } from "./app.component";
+import { HttpModule } from "@angular/http";
+import { ChatDialogComponent } from "./chat/chat-dialog/chat-dialog.component";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ChatDialogComponent
-
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule
-  ],
+  declarations: [AppComponent, ChatDialogComponent],
+  imports: [BrowserModule, FormsModule, HttpModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

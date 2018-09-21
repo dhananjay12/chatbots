@@ -5,17 +5,16 @@
 }
 
 .message.to {
-  background-color: #2095FE;
+  background-color: #2095fe;
   color: #363636;
   margin-left: 100px;
   text-align: right;
 }
 
 .message.from {
-  background-color: #E5E4E9;
+  background-color: #e5e4e9;
   color: #363636;
   margin-right: 100px;
-
 }
 
 .chatlist {
@@ -46,7 +45,7 @@
   margin-right: 20px;
 }
 
-.message.to+.message.to,
-.message.from+.message.from {
+.message.to + .message.to,
+.message.from + .message.from {
   margin-top: -10px;
 }
